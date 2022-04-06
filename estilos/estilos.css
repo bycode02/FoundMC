@@ -1,0 +1,381 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* body{
+    
+    background-color:#a7e2e3;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    color:#050505;      
+}
+
+/* header{
+    background-color:#3E5F5B;
+} */
+
+/* .footer{
+    margin-top: 0px; 
+    background:#3E5F5B;
+    color:#000000 ;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    left: 0%;
+    text-align: center;   
+}  */
+
+/* #logo{
+    float: left;
+} */
+
+
+
+/* #nav{
+    list-style-type: none;
+    text-decoration: none;
+    height: 100px;
+    margin-left:40% ;
+    margin-top: 0%;
+        
+}
+
+
+header nav ul li a:link,a:visited{
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none;
+   color: #000000;
+    float: left;
+    margin: 20px;
+    font-size: 20px;
+    padding-top: 20px;     
+       
+} */
+
+/* sobre nosotros */
+/* 
+.titulo {
+    color: #000000;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.opinionartista{
+    position: relative;
+
+    width: 50px;
+    height: 15px;
+    margin-top: 0;
+}
+
+section{
+    margin-left: 20px;
+}
+
+.section_titulo{
+    color: #000000;
+    padding: 5px;
+    margin-bottom: 0%;
+}
+
+.section_texto{
+    padding: 1px 50px ;
+    margin: 10px;
+    color: #000000;
+}
+
+.cuestionario{
+    margin-left: 30px;
+    color: #000000;
+}
+
+.cuestionario_texto{
+    margin-left: 30px;
+    color: #000000;
+    padding: 5px;
+}
+
+.titulo_formulario{
+    margin-left: 30px;
+    color: #000000;
+}
+
+.sexo_alternativas{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.edad{
+    padding: 10px;
+    margin-left: 30px;
+    color:#000000;
+    
+}
+ 
+.eded ol li input{
+ margin: 5px;
+ padding: 0%;
+}
+
+.rapero_favorito{
+      margin: 1px;
+      margin-left: 15px;
+      padding: 10px;
+      color: #000000;
+}
+
+.boton_enviar{
+    margin-top: 10px;
+    margin-left:150px;
+    margin-bottom: 10px;
+   color: #000000;
+}
+
+/* .artistas */
+/* .artistas{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    
+             
+}
+
+.artista1{
+    padding: 10px;  
+    margin: 10px;    
+
+}
+
+.artista2{
+    padding: 10px;
+    margin: 10px; 
+
+}
+
+.artista3{
+    padding: 10px;
+    margin: 10px; 
+
+} */
+
+
+/* artistas 1 2 y 3*/
+
+/* .opinion{
+    margin: 10px;
+    padding: 5px;
+}
+
+.redes {
+    padding: 5px;
+    margin: 1px;
+    margin-left: 50px;
+   
+}
+
+.redes span h3{
+    margin: 1px;
+    margin-left: 10px;
+    padding: 0%;
+}
+
+
+    /* TAMANO ESCRITORIO */
+
+@media screen and (max-width: 1920px){
+    body{ 
+    display: grid;
+    grid-template-columns:  0.6fr 1.4fr 1fr;
+    grid-template-rows:  1fr 1.7fr 0.3fr;
+    
+
+    grid-template-areas:
+    
+    "header header header"
+    "titulo titulo titulo"
+    "footer footer footer"
+    ;  
+  
+   
+
+    }
+   
+    /* INDEX */
+
+    /* HEADER(NAV Y LOGO) */
+
+    .header{
+        grid-area: header;
+        max-width: 100%;
+        height: 100px;
+        background-color: hsl(0, 0%, 24%);
+
+    }
+    .recaudro{
+        grid-area: header;
+        width: 80%;
+        height: 100px;
+        background-color: hsl(0, 0%, 24%);
+        margin: auto;
+        display: flex;
+
+    }
+    #logo{
+        grid-area: nav;
+        width: 30%;
+        height: 100px;
+        background: hsl(0, 0%, 24%);
+        box-sizing: border-box;
+             
+    }
+    nav {
+        background-color: hsl(0, 0%, 24%);
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        height: 50px;
+        padding-top: 35px;
+        
+    }
+    nav ul li{
+        display: inline-block;
+
+    }
+    nav ul li a{
+        color: black;
+        display: block;
+        font-size: 20px;
+        text-decoration:none;
+        text-transform: uppercase;
+        padding: 0px 30px; 
+        letter-spacing: 7px;
+
+    }
+    nav ul li a:hover{
+        color: rgb(169, 169, 169);
+        background: rgb(75, 75, 75);
+        transition: all 0.4s;
+        border-radius: 6px;
+        
+    }
+       /* TITULO Y CENTYRADO DE PAGINA */
+    
+    .titulo{
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+    .titulo h1{
+        grid-area: titulo;
+        padding: 0 auto;
+        
+    }
+
+        /* FOOTER DE LA PAGINNA */
+    .footer{
+        background-color: hsl(0, 0%, 24%);
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: px;
+        width:100%;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        height: 40px;
+        left: 0%;
+    }
+    .texto_footer{
+        grid-area: footer;
+        flex-direction: row;   
+    }
+     .texto_footer:hover{
+        color: rgb(169, 169, 169);
+        background: rgb(75, 75, 75);
+        transition: all 0.2s;
+        border-top: 6px;
+
+     }
+
+     .texto_footer p{
+         margin: 3% 0%;
+     }     
+         
+
+    
+}   @media screen and (max-width: 768px){
+    body{
+      display: grid;
+      grid-template-columns: 0.5fr 1.8fr;
+      grid-template-rows: 1fr 2.4fr 0.2fr;
+      grid-template-areas: 
+
+    "header header"
+    "titulo titulo"
+    "footer footer"
+      
+      ;     
+    }
+    .header{
+        grid-area: header;
+        width: 768px;
+    }
+    .logo{
+        grid-area: header;
+
+    }
+    nav{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: space-evenly;
+    }
+     nav ul li a{
+        font-size: 20px;
+        letter-spacing: 2px;
+        
+       
+     }
+       /* ENLACE SOBRE NOSOTROS */
+     .enlace_sb{
+         margin-top: 10px;
+         margin-left: 20px;
+         justify-self: flex-end;
+         align-self: center;
+
+     }
+      nav ul li a:hover{
+          border-radius: 8px;
+          
+
+      }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+}
+
+    
+
+    /* TAMANO CELULAR */
+
+@media screen and (max-width: 480px) {
+    body{
+        
+        
+    }
+    
+}
