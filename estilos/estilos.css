@@ -198,7 +198,7 @@ section{
     grid-template-areas:
     
     "header header header"
-    "titulo titulo titulo"
+    ". titulo ."
     "footer footer footer"
     ;  
   
@@ -298,10 +298,11 @@ section{
     }
     .texto_footer{
         grid-area: footer;
-        flex-direction: row;   
+        flex-direction: row;
+        color:rgb(13, 13, 13) ;   
     }
      .texto_footer:hover{
-        color: rgb(169, 169, 169);
+        color: rgb(255, 246, 246);
         background: rgb(75, 75, 75);
         transition: all 0.2s;
         border-top: 6px;
@@ -312,9 +313,9 @@ section{
          margin: 3% 0%;
      }     
          
-
     
-}   @media screen and (max-width: 768px){
+} 
+  @media screen and (max-width: 768px){
     body{
       display: grid;
       grid-template-columns: 0.5fr 1.8fr;
@@ -322,7 +323,7 @@ section{
       grid-template-areas: 
 
     "header header"
-    "titulo titulo"
+    ".titulo"
     "footer footer"
       
       ;     
@@ -336,30 +337,25 @@ section{
 
     }
     nav{
+        grid-area: header;
         display: flex;
-        flex-flow: row wrap-reverse;
+        flex-direction: row;
+       flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-items: flex-end;
+        margin-top: 30px;
     }
      nav ul li a{
-        font-size: 20px;
-        letter-spacing: 2px;
-        
+        font-size: 15px;
        
      }
-       /* ENLACE SOBRE NOSOTROS */
-     .enlace_sb{
-         margin-top: 10px;
-         margin-left: 20px;
-         justify-self: flex-end;
-         align-self: center;
+     
+     nav ul li a:hover{
+        border-radius: 8px;
+        
 
-     }
-      nav ul li a:hover{
-          border-radius: 8px;
-          
-
-      }
-
+    }
+    
     .titulo{
         display: flex;
         justify-content: center;
@@ -374,8 +370,84 @@ section{
 
 @media screen and (max-width: 480px) {
     body{
+        display: grid;
+        grid-template-columns: 0.4fr 1fr ;
+        grid-template-rows: 3.5fr 0.2fr;
+        grid-template-areas: none
         
-        
+    "header titulo"
+    "heder footer"
+   
+        ;  
+    }
+
+    .header{
+        grid-area: header;
+        width: 120px;
+        height: 850px;
+        display: flex;
+        padding: 0 20px;
+    }
+
+    .logo{
+        grid-area: header;
+       justify-content: flex-start;
+       
+    }
+    .logo img{
+        border-bottom: 10px solid white;
+        float:left ;
+        width: 100px;
     }
     
+    .nav{
+        grid-area: header;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 300px -100px ;
+      }
+    .nav ul li{
+        display: inline-block;
+        padding: 50px 0px;
+        margin: 20px 20px;
+    }
+
+    .nav ul li a{
+        letter-spacing: 5px;
+
+   }
+   .nav ul li a:hover{
+       transform: scaleX(3px);
+       border-top: white;
+       font-size: 5px;
+
+   }
+
+   .titulo{
+       grid-area: titulo;
+       display: flex;
+   }
+   .titulo h1{
+       
+
+   }
+
+   .footer{
+       grid-area: footer;
+       font-display: flex;
+       justify-content: center;
+   }
+   .texto_footer{
+       font-size: small;
+       color: rgb(0, 0, 0);
+   }
+   .texto_footer :hover{
+       transition: all 0.2s;
+       color: aliceblue;
+       border-radius: 3px rgb(149, 149, 149);
+
+   }
 }
